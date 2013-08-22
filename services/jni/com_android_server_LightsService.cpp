@@ -88,10 +88,6 @@ static jint init_native(JNIEnv *env, jobject clazz)
                 = get_device(module, LIGHT_ID_BLUETOOTH);
         devices->lights[LIGHT_INDEX_WIFI]
                 = get_device(module, LIGHT_ID_WIFI);
-        devices->lights[LIGHT_INDEX_CAPS]
-                = get_device(module, LIGHT_ID_CAPS);
-        devices->lights[LIGHT_INDEX_FUNC]
-                = get_device(module, LIGHT_ID_FUNC); 
     } else {
         memset(devices, 0, sizeof(Devices));
     }
